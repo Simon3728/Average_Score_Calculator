@@ -1,0 +1,6 @@
+/venv/
+/__pycache__/
+/.pytest_cache/
+/docs/
+/pdf_reader/__pycache__/
+/export_excel/__pycache__/

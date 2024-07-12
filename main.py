@@ -11,7 +11,7 @@ def main() -> None:
     Main function to read the PDF, parse the subjects, and calculate the average grades.
     """
     relative_filepath = os.path.dirname(os.path.abspath(__file__))
-    pdf_path = os.path.join(relative_filepath, 'Noten_Uni.pdf')
+    pdf_path = os.path.join(relative_filepath, 'assets/Noten_Uni.pdf')
 
     # Read the pdf File 
     text = read_pdf_line_by_line(pdf_path)
@@ -48,7 +48,7 @@ def main() -> None:
         print(f"An error occurred: {e}")
 
     # Export All Data into an Excel File
-    export_to_excel(areas, "Notenübersicht.xlsx")
+    export_to_excel(areas, "assets/Notenübersicht.xlsx")
 
 if __name__ == "__main__":
     main()
